@@ -31,8 +31,8 @@ const Index = () => {
       <LogoMarquee />
       <Services />
       <Process />
-      <Pricing />
       <Testimonials />
+      <Pricing />
       <CTA />
       <Footer />
     </main>
