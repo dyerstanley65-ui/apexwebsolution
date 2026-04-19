@@ -4,6 +4,7 @@ import LogoMarquee from "@/components/sections/LogoMarquee";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
 import Pricing from "@/components/sections/Pricing";
+import Testimonials from "@/components/sections/Testimonials";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 import { useEffect } from "react";
@@ -31,6 +32,7 @@ const Index = () => {
       <Services />
       <Process />
       <Pricing />
+      <Testimonials />
       <CTA />
       <Footer />
     </main>
