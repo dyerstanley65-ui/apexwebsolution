@@ -15,7 +15,7 @@ const Footer = () => (
       <div className="flex gap-6 text-sm text-muted-foreground">
         <a href="#" className="hover:text-foreground transition-colors">Twitter</a>
         <a href="#" className="hover:text-foreground transition-colors">Dribbble</a>
-        <a href="mailto:hello@apexweb.studio" className="hover:text-foreground transition-colors">Email</a>
+        <a href="mailto:apexwebsolutions23@outlook.com" className="hover:text-foreground transition-colors">Email</a>
       </div>
     </div>
   </footer>
