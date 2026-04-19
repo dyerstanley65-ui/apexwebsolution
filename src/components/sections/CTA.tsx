@@ -3,19 +3,36 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
 
 const CTA = () => {
   const { toast } = useToast();
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
+    setLoading(true);
+    const { error } = await supabase
+      .from("briefing_requests")
+      .insert({ email: email.trim(), message: message.trim() || null });
+    setLoading(false);
+    if (error) {
+      toast({
+        title: "Something went wrong",
+        description: error.message,
+        variant: "destructive",
+      });
+      return;
+    }
     toast({
       title: "We'll be in touch",
-      description: "Thanks — your project brief is on the way to your inbox.",
+      description: "Thanks — we received your brief and will reply within one business day.",
     });
     setEmail("");
+    setMessage("");
   };
 
   return (
@@ -42,21 +59,31 @@ const CTA = () => {
               reply within one business day with next steps.
             </p>
 
-            <form onSubmit={onSubmit} className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <div className="relative flex-1">
-                <Mail className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@company.com"
-                  className="h-14 w-full rounded-lg border border-hairline bg-background/60 pl-11 pr-4 text-base text-foreground placeholder:text-muted-foreground/70 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
-                />
+            <form onSubmit={onSubmit} className="mt-10 flex flex-col gap-3">
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <div className="relative flex-1">
+                  <Mail className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                  <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="you@company.com"
+                    className="h-14 w-full rounded-lg border border-hairline bg-background/60 pl-11 pr-4 text-base text-foreground placeholder:text-muted-foreground/70 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  />
+                </div>
+                <Button type="submit" variant="hero" size="xl" disabled={loading}>
+                  {loading ? "Sending…" : "Request brief"} <ArrowUpRight className="h-5 w-5" />
+                </Button>
               </div>
-              <Button type="submit" variant="hero" size="xl">
-                Request brief <ArrowUpRight className="h-5 w-5" />
-              </Button>
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Tell us briefly what you're building (optional)"
+                rows={3}
+                maxLength={1000}
+                className="w-full rounded-lg border border-hairline bg-background/60 p-4 text-base text-foreground placeholder:text-muted-foreground/70 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+              />
             </form>
 
             <p className="mt-6 text-xs text-muted-foreground">
