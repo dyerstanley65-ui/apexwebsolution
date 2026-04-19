@@ -61,8 +61,8 @@ const CTA = () => {
 
             <p className="mt-6 text-xs text-muted-foreground">
               Or email us directly at{" "}
-              <a href="mailto:hello@apexweb.studio" className="text-foreground underline-offset-4 hover:underline">
-                hello@apexweb.studio
+              <a href="mailto:apexwebsolutions23@outlook.com" className="text-foreground underline-offset-4 hover:underline">
+                apexwebsolutions23@outlook.com
               </a>
             </p>
           </div>
