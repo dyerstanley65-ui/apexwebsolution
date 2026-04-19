@@ -1,0 +1,86 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { ArrowUpRight, Sparkles } from "lucide-react";
+
+const Hero = () => {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 500], [0, 100]);
+
+  return (
+    <section className="relative min-h-[92vh] overflow-hidden bg-hero pt-32">
+      <motion.div
+        style={{ y }}
+        className="absolute inset-0 grid-lines opacity-[0.35] [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]"
+      />
+      <div className="container relative">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium text-primary"
+        >
+          <Sparkles className="h-3.5 w-3.5" />
+          Now booking Q3 projects
+        </motion.div>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="font-display mt-8 max-w-5xl text-[clamp(2.75rem,8vw,7rem)] font-700 leading-[0.95] tracking-tight"
+        >
+          Websites that turn{" "}
+          <span className="text-gradient italic">ideas</span>
+          <br />
+          into momentum.
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-8 max-w-xl text-lg text-muted-foreground sm:text-xl"
+        >
+          Apex Web Solutions pairs you with a dedicated creator who designs,
+          builds, and ships your site — fast, polished, and unmistakably yours.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.45 }}
+          className="mt-10 flex flex-wrap items-center gap-4"
+        >
+          <Button variant="hero" size="xl" asChild>
+            <a href="#contact">
+              Start your project <ArrowUpRight className="h-5 w-5" />
+            </a>
+          </Button>
+          <Button variant="outlineGlow" size="xl" asChild>
+            <a href="#services">Explore packages</a>
+          </Button>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="mt-24 grid max-w-3xl grid-cols-3 gap-8 border-t border-hairline pt-8"
+        >
+          {[
+            { v: "120+", l: "Sites delivered" },
+            { v: "14d", l: "Avg. turnaround" },
+            { v: "98%", l: "Client retention" },
+          ].map((s) => (
+            <div key={s.l}>
+              <div className="font-display text-3xl font-semibold sm:text-4xl">{s.v}</div>
+              <div className="mt-1 text-sm text-muted-foreground">{s.l}</div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

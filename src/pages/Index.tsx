@@ -1,16 +1,40 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/sections/Navbar";
+import Hero from "@/components/sections/Hero";
+import LogoMarquee from "@/components/sections/LogoMarquee";
+import Services from "@/components/sections/Services";
+import Process from "@/components/sections/Process";
+import Pricing from "@/components/sections/Pricing";
+import CTA from "@/components/sections/CTA";
+import Footer from "@/components/sections/Footer";
+import { useEffect } from "react";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useEffect(() => {
+    document.title = "Apex Web Solutions — Custom websites, built around you";
+    const meta = document.querySelector('meta[name="description"]') || (() => {
+      const m = document.createElement("meta");
+      m.setAttribute("name", "description");
+      document.head.appendChild(m);
+      return m;
+    })();
+    meta.setAttribute(
+      "content",
+      "Apex Web Solutions designs and builds custom portfolio, business and e-commerce websites. Transparent pricing, dedicated creator, fast turnaround.",
+    );
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <LogoMarquee />
+      <Services />
+      <Process />
+      <Pricing />
+      <CTA />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
