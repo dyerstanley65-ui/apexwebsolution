@@ -16,6 +16,7 @@ const Footer = () => (
         <a href="#" className="hover:text-foreground transition-colors">Twitter</a>
         <a href="#" className="hover:text-foreground transition-colors">Dribbble</a>
         <a href="mailto:apexwebsolutions23@outlook.com" className="hover:text-foreground transition-colors">Email</a>
+        <a href="/auth" className="hover:text-foreground transition-colors">Admin</a>
       </div>
     </div>
   </footer>
