@@ -13,7 +13,7 @@ const CTA = () => {
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
+    if (!email || !message.trim()) return;
     setLoading(true);
     const { error } = await supabase
       .from("briefing_requests")
@@ -79,8 +79,9 @@ const CTA = () => {
               <textarea
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Tell us briefly what you're building (optional)"
+                placeholder="Tell us briefly what you're building"
                 rows={3}
+                required
                 maxLength={1000}
                 className="w-full rounded-lg border border-hairline bg-background/60 p-4 text-base text-foreground placeholder:text-muted-foreground/70 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
               />
