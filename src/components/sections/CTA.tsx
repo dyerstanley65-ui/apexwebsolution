@@ -13,7 +13,7 @@ const CTA = () => {
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
+    if (!email || !message.trim()) return;
     setLoading(true);
     const { error } = await supabase
       .from("briefing_requests")
