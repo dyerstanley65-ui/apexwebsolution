@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { n: "01", title: "Discovery", desc: "A focused call to map your goals, audience and aesthetic. You leave with a clear scope and timeline." },
-  { n: "02", title: "Design", desc: "Custom mockups built around your brand. We iterate until every pixel feels right — no template-shaped boxes." },
-  { n: "03", title: "Build", desc: "Hand-coded with modern tooling. Responsive, fast, accessible, and ready for whatever you throw at it." },
-  { n: "04", title: "Launch", desc: "We ship to your domain, hand over the keys, and stay on call for revisions. Your site, your rules." },
+  { n: "01", title: "Discovery", desc: "A focused call with me directly to map your goals, audience and aesthetic. You leave with a clear scope and timeline." },
+  { n: "02", title: "Design", desc: "I create custom mockups built around your brand and iterate until every pixel feels right — no template-shaped boxes." },
+  { n: "03", title: "Build", desc: "Every line of code is written by me. Responsive, fast, accessible, and ready for whatever you throw at it." },
+  { n: "04", title: "Launch", desc: "I ship to your domain, hand over the keys, and stay on call for revisions. Your site, your rules." },
 ];
 
 const Process = () => (
@@ -13,9 +13,13 @@ const Process = () => (
       <div className="max-w-3xl">
         <p className="text-xs uppercase tracking-[0.25em] text-primary">— The process</p>
         <h2 className="font-display mt-4 text-5xl font-semibold leading-[1] tracking-tight sm:text-6xl">
-          Simple. Transparent.<br />
-          <span className="italic text-muted-foreground">Always in the loop.</span>
+          One creator.<br />
+          <span className="italic text-muted-foreground">Start to finish.</span>
         </h2>
+        <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
+          When you hire Apex Web Solutions, you're hiring me — the same person
+          who designs your site is the one writing the code and shipping it.
+        </p>
       </div>
 
       <div className="mt-20 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
