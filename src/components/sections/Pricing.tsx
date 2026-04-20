@@ -14,7 +14,7 @@ const tiers = [
     name: "Studio",
     price: "£300",
     blurb: "A full multi-page site to grow your brand.",
-    features: ["3 custom pages", "CMS / blog integration", "SEO foundation & on-page copy help", "Unlimited revisions during build", "14-day delivery"],
+    features: ["Up to 6 custom pages", "CMS / blog integration", "SEO foundation & on-page copy help", "Unlimited revisions during build", "14-day delivery"],
     cta: "Choose Studio",
     featured: true,
   },
@@ -22,7 +22,7 @@ const tiers = [
     name: "Apex",
     price: "£500",
     blurb: "A complete site with everything you need to scale.",
-    features: ["5 custom pages", "Custom features & integrations", "Advanced SEO & analytics setup", "Dedicated project lead", "Post-launch support retainer"],
+    features: ["Any number of custom pages (up to 20)", "Custom features & integrations", "Advanced SEO & analytics setup", "Dedicated project lead", "Post-launch support retainer"],
     cta: "Book a call",
   },
 ];
