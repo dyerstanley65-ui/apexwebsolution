@@ -5,24 +5,24 @@ import { Button } from "@/components/ui/button";
 const tiers = [
   {
     name: "Launch",
-    price: "$100",
+    price: "£100",
     blurb: "A polished one-pager to get you online — fast.",
-    features: ["Custom single-page design", "Mobile-perfect responsive build", "Contact form & analytics", "2 rounds of revisions", "7-day delivery"],
+    features: ["1 custom page", "Mobile-perfect responsive build", "Contact form & analytics", "2 rounds of revisions", "7-day delivery"],
     cta: "Start with Launch",
   },
   {
     name: "Studio",
-    price: "$300",
-    blurb: "A full multi-page site with a CMS your team can run.",
-    features: ["Up to 6 custom pages", "CMS / blog integration", "SEO foundation & on-page copy help", "Unlimited revisions during build", "14-day delivery"],
+    price: "£300",
+    blurb: "A full multi-page site to grow your brand.",
+    features: ["3 custom pages", "CMS / blog integration", "SEO foundation & on-page copy help", "Unlimited revisions during build", "14-day delivery"],
     cta: "Choose Studio",
     featured: true,
   },
   {
     name: "Apex",
-    price: "$500",
-    blurb: "E-commerce, web apps, or anything beyond the standard scope.",
-    features: ["Discovery workshop", "Custom features & integrations", "Auth, payments, dashboards", "Dedicated project lead", "Post-launch support retainer"],
+    price: "£500",
+    blurb: "A complete site with everything you need to scale.",
+    features: ["5 custom pages", "Custom features & integrations", "Advanced SEO & analytics setup", "Dedicated project lead", "Post-launch support retainer"],
     cta: "Book a call",
   },
 ];
