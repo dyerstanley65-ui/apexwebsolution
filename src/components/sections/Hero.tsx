@@ -41,8 +41,10 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-8 max-w-xl text-lg text-muted-foreground sm:text-xl"
         >
-          Apex Web Solutions pairs you with a dedicated creator who designs,
-          builds, and ships your site — fast, polished, and unmistakably yours.
+          Apex Web Solutions is a one-person studio — every site you see here
+          is personally designed, coded and shipped by me. No agencies, no
+          handoffs, no outsourcing. Just one creator building your site from
+          first sketch to launch.
         </motion.p>
 
         <motion.div
