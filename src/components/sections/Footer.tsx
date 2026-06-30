@@ -1,3 +1,5 @@
+import { Phone } from "lucide-react";
+
 const Footer = () => (
   <footer className="border-t border-hairline py-12">
     <div className="container flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
@@ -12,10 +14,13 @@ const Footer = () => (
       <p className="text-sm text-muted-foreground">
         © {new Date().getFullYear()} Apex Web Solutions. Crafted with care.
       </p>
-      <div className="flex gap-6 text-sm text-muted-foreground">
+      <div className="flex items-center gap-6 text-sm text-muted-foreground">
         <a href="#" className="hover:text-foreground transition-colors">Twitter</a>
         <a href="#" className="hover:text-foreground transition-colors">Dribbble</a>
         <a href="mailto:apexwebsolutions23@outlook.com" className="hover:text-foreground transition-colors">Email</a>
+        <a href="tel:+447823513614" className="flex items-center gap-1.5 hover:text-foreground transition-colors">
+          <Phone className="h-3.5 w-3.5" /> +44 7823 513614
+        </a>
         <a href="/auth" className="hover:text-foreground transition-colors">Admin</a>
       </div>
     </div>

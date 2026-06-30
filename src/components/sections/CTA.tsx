@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, Mail } from "lucide-react";
+import { ArrowUpRight, Mail, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -91,6 +91,10 @@ const CTA = () => {
               Or email us directly at{" "}
               <a href="mailto:apexwebsolutions23@outlook.com" className="text-foreground underline-offset-4 hover:underline">
                 apexwebsolutions23@outlook.com
+              </a>
+              {" "}·{" "}
+              <a href="tel:+447823513614" className="inline-flex items-center gap-1 text-foreground underline-offset-4 hover:underline">
+                <Phone className="h-3 w-3" /> +44 7823 513614
               </a>
             </p>
           </div>
