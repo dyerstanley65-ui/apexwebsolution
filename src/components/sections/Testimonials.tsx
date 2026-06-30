@@ -1,4 +1,3 @@
-import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const reviews = [
@@ -51,12 +50,7 @@ const Testimonials = () => {
               className="border-hairline bg-card/50 backdrop-blur transition-colors hover:border-primary/40"
             >
               <CardContent className="p-8">
-                <div className="flex gap-1 text-primary">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="mt-5 text-lg leading-relaxed text-foreground">
+                <blockquote className="text-lg leading-relaxed text-foreground">
                   "{r.quote}"
                 </blockquote>
                 <div className="mt-6">
