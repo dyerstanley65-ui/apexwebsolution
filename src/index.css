@@ -5,45 +5,45 @@
 @tailwind utilities;
 
 /* Apex Web Solutions — Editorial tech design system.
-   Deep navy canvas, vivid pink accent, refined neutrals.
+   Black canvas, vivid pink accent, refined neutrals.
    All colors HSL. */
 
 @layer base {
   :root {
-    --background: 222 47% 7%;
+    --background: 0 0% 7%;
     --foreground: 40 20% 96%;
 
-    --card: 222 40% 10%;
+    --card: 0 0% 10%;
     --card-foreground: 40 20% 96%;
 
-    --popover: 222 40% 10%;
+    --popover: 0 0% 10%;
     --popover-foreground: 40 20% 96%;
 
     --primary: 335 90% 65%;
-    --primary-foreground: 222 47% 7%;
+    --primary-foreground: 0 0% 7%;
     --primary-glow: 335 100% 75%;
 
-    --secondary: 222 30% 14%;
+    --secondary: 0 0% 14%;
     --secondary-foreground: 40 20% 96%;
 
-    --muted: 222 25% 16%;
-    --muted-foreground: 220 12% 65%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 65%;
 
     --accent: 200 85% 60%;
-    --accent-foreground: 222 47% 7%;
+    --accent-foreground: 0 0% 7%;
 
     --destructive: 0 75% 60%;
     --destructive-foreground: 40 20% 96%;
 
-    --border: 222 25% 18%;
-    --input: 222 25% 18%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
     --ring: 335 90% 65%;
 
     --radius: 0.75rem;
 
     /* Bespoke tokens */
-    --surface-elevated: 222 38% 12%;
-    --hairline: 220 20% 22%;
+    --surface-elevated: 0 0% 12%;
+    --hairline: 0 0% 22%;
 
     --gradient-hero: radial-gradient(ellipse at top right, hsl(335 90% 65% / 0.15), transparent 60%),
                      radial-gradient(ellipse at bottom left, hsl(200 85% 60% / 0.12), transparent 55%);
@@ -51,18 +51,18 @@
     --gradient-border: linear-gradient(135deg, hsl(335 90% 65% / 0.4), hsl(200 85% 60% / 0.2));
 
     --shadow-glow: 0 0 60px -10px hsl(335 90% 65% / 0.4);
-    --shadow-card: 0 20px 60px -20px hsl(222 80% 2% / 0.6);
-    --shadow-elevated: 0 30px 80px -25px hsl(222 80% 2% / 0.8);
+    --shadow-card: 0 20px 60px -20px hsl(0 0% 2% / 0.6);
+    --shadow-elevated: 0 30px 80px -25px hsl(0 0% 2% / 0.8);
 
     --transition-smooth: cubic-bezier(0.32, 0.72, 0, 1);
 
-    --sidebar-background: 222 40% 10%;
+    --sidebar-background: 0 0% 10%;
     --sidebar-foreground: 40 20% 96%;
     --sidebar-primary: 335 90% 65%;
-    --sidebar-primary-foreground: 222 47% 7%;
-    --sidebar-accent: 222 30% 14%;
+    --sidebar-primary-foreground: 0 0% 7%;
+    --sidebar-accent: 0 0% 14%;
     --sidebar-accent-foreground: 40 20% 96%;
-    --sidebar-border: 222 25% 18%;
+    --sidebar-border: 0 0% 18%;
     --sidebar-ring: 335 90% 65%;
   }
 }
