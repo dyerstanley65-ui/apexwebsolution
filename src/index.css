@@ -45,12 +45,12 @@
     --surface-elevated: 222 38% 12%;
     --hairline: 220 20% 22%;
 
-    --gradient-hero: radial-gradient(ellipse at top right, hsl(75 95% 58% / 0.15), transparent 60%),
+    --gradient-hero: radial-gradient(ellipse at top right, hsl(335 90% 65% / 0.15), transparent 60%),
                      radial-gradient(ellipse at bottom left, hsl(200 85% 60% / 0.12), transparent 55%);
-    --gradient-text: linear-gradient(135deg, hsl(40 20% 96%) 0%, hsl(75 95% 58%) 100%);
-    --gradient-border: linear-gradient(135deg, hsl(75 95% 58% / 0.4), hsl(200 85% 60% / 0.2));
+    --gradient-text: linear-gradient(135deg, hsl(40 20% 96%) 0%, hsl(335 90% 65%) 100%);
+    --gradient-border: linear-gradient(135deg, hsl(335 90% 65% / 0.4), hsl(200 85% 60% / 0.2));
 
-    --shadow-glow: 0 0 60px -10px hsl(75 95% 58% / 0.4);
+    --shadow-glow: 0 0 60px -10px hsl(335 90% 65% / 0.4);
     --shadow-card: 0 20px 60px -20px hsl(222 80% 2% / 0.6);
     --shadow-elevated: 0 30px 80px -25px hsl(222 80% 2% / 0.8);
 
