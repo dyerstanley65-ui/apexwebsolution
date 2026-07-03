@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 /* Apex Web Solutions — Editorial tech design system.
-   Deep navy canvas, electric lime accent, refined neutrals.
+   Deep navy canvas, vivid pink accent, refined neutrals.
    All colors HSL. */
 
 @layer base {
@@ -19,9 +19,9 @@
     --popover: 222 40% 10%;
     --popover-foreground: 40 20% 96%;
 
-    --primary: 75 95% 58%;
+    --primary: 335 90% 65%;
     --primary-foreground: 222 47% 7%;
-    --primary-glow: 75 100% 70%;
+    --primary-glow: 335 100% 75%;
 
     --secondary: 222 30% 14%;
     --secondary-foreground: 40 20% 96%;
@@ -37,7 +37,7 @@
 
     --border: 222 25% 18%;
     --input: 222 25% 18%;
-    --ring: 75 95% 58%;
+    --ring: 335 90% 65%;
 
     --radius: 0.75rem;
 
@@ -45,12 +45,12 @@
     --surface-elevated: 222 38% 12%;
     --hairline: 220 20% 22%;
 
-    --gradient-hero: radial-gradient(ellipse at top right, hsl(75 95% 58% / 0.15), transparent 60%),
+    --gradient-hero: radial-gradient(ellipse at top right, hsl(335 90% 65% / 0.15), transparent 60%),
                      radial-gradient(ellipse at bottom left, hsl(200 85% 60% / 0.12), transparent 55%);
-    --gradient-text: linear-gradient(135deg, hsl(40 20% 96%) 0%, hsl(75 95% 58%) 100%);
-    --gradient-border: linear-gradient(135deg, hsl(75 95% 58% / 0.4), hsl(200 85% 60% / 0.2));
+    --gradient-text: linear-gradient(135deg, hsl(40 20% 96%) 0%, hsl(335 90% 65%) 100%);
+    --gradient-border: linear-gradient(135deg, hsl(335 90% 65% / 0.4), hsl(200 85% 60% / 0.2));
 
-    --shadow-glow: 0 0 60px -10px hsl(75 95% 58% / 0.4);
+    --shadow-glow: 0 0 60px -10px hsl(335 90% 65% / 0.4);
     --shadow-card: 0 20px 60px -20px hsl(222 80% 2% / 0.6);
     --shadow-elevated: 0 30px 80px -25px hsl(222 80% 2% / 0.8);
 
@@ -58,12 +58,12 @@
 
     --sidebar-background: 222 40% 10%;
     --sidebar-foreground: 40 20% 96%;
-    --sidebar-primary: 75 95% 58%;
+    --sidebar-primary: 335 90% 65%;
     --sidebar-primary-foreground: 222 47% 7%;
     --sidebar-accent: 222 30% 14%;
     --sidebar-accent-foreground: 40 20% 96%;
     --sidebar-border: 222 25% 18%;
-    --sidebar-ring: 75 95% 58%;
+    --sidebar-ring: 335 90% 65%;
   }
 }
 
