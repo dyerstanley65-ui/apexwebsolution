@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 /* Apex Web Solutions — Editorial tech design system.
-   Rich black canvas, neon purple-pink accent, refined cool greys.
+   Rich black canvas, neon pink accent, refined cool greys.
    All colors HSL. */
 
 @layer base {
@@ -19,9 +19,9 @@
     --popover: 0 0% 9.4%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 292 100% 62%;
+    --primary: 335 100% 65%;
     --primary-foreground: 0 0% 5.9%;
-    --primary-glow: 292 100% 74%;
+    --primary-glow: 335 100% 78%;
 
     --secondary: 0 0% 14%;
     --secondary-foreground: 0 0% 98%;
@@ -29,7 +29,7 @@
     --muted: 0 0% 16%;
     --muted-foreground: 0 0% 63.9%;
 
-    --accent: 292 50% 88%;
+    --accent: 335 60% 90%;
     --accent-foreground: 0 0% 5.9%;
 
     --destructive: 0 75% 60%;
@@ -37,7 +37,7 @@
 
     --border: 0 0% 18%;
     --input: 0 0% 18%;
-    --ring: 292 100% 62%;
+    --ring: 335 100% 65%;
 
     --radius: 0.75rem;
 
@@ -45,12 +45,12 @@
     --surface-elevated: 0 0% 12%;
     --hairline: 0 0% 22%;
 
-    --gradient-hero: radial-gradient(ellipse at top right, hsl(292 100% 62% / 0.15), transparent 60%),
-                     radial-gradient(ellipse at bottom left, hsl(292 100% 62% / 0.08), transparent 55%);
-    --gradient-text: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(292 100% 62%) 100%);
-    --gradient-border: linear-gradient(135deg, hsl(292 100% 62% / 0.4), hsl(292 100% 74% / 0.2));
+    --gradient-hero: radial-gradient(ellipse at top right, hsl(335 100% 65% / 0.15), transparent 60%),
+                     radial-gradient(ellipse at bottom left, hsl(335 100% 65% / 0.08), transparent 55%);
+    --gradient-text: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(335 100% 65%) 100%);
+    --gradient-border: linear-gradient(135deg, hsl(335 100% 65% / 0.4), hsl(335 100% 78% / 0.2));
 
-    --shadow-glow: 0 0 60px -10px hsl(292 100% 62% / 0.4);
+    --shadow-glow: 0 0 60px -10px hsl(335 100% 65% / 0.4);
     --shadow-card: 0 20px 60px -20px hsl(0 0% 2% / 0.6);
     --shadow-elevated: 0 30px 80px -25px hsl(0 0% 2% / 0.8);
 
@@ -58,12 +58,12 @@
 
     --sidebar-background: 0 0% 9.4%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 292 100% 62%;
+    --sidebar-primary: 335 100% 65%;
     --sidebar-primary-foreground: 0 0% 5.9%;
     --sidebar-accent: 0 0% 14%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 292 100% 62%;
+    --sidebar-ring: 335 100% 65%;
   }
 }
 
