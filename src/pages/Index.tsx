@@ -3,8 +3,10 @@ import Hero from "@/components/sections/Hero";
 
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
+import Trust from "@/components/sections/Trust";
 import Pricing from "@/components/sections/Pricing";
 import Testimonials from "@/components/sections/Testimonials";
+import FAQ from "@/components/sections/FAQ";
 import CTA from "@/components/sections/CTA";
 import Footer from "@/components/sections/Footer";
 import { useEffect } from "react";
@@ -28,11 +30,13 @@ const Index = () => {
     <main className="min-h-screen bg-background">
       <Navbar />
       <Hero />
-      
+
       <Services />
       <Process />
+      <Trust />
       <Testimonials />
       <Pricing />
+      <FAQ />
       <CTA />
       <Footer />
     </main>

@@ -15,6 +15,7 @@ const Footer = () => (
         © {new Date().getFullYear()} Apex Web Solutions. Crafted with care.
       </p>
       <div className="flex items-center gap-6 text-sm text-muted-foreground">
+        <a href="#faq" className="hover:text-foreground transition-colors">FAQ</a>
         <a href="#" className="hover:text-foreground transition-colors">Twitter</a>
         <a href="#" className="hover:text-foreground transition-colors">Dribbble</a>
         <a href="mailto:apexwebsolutions23@outlook.com" className="hover:text-foreground transition-colors">Email</a>
